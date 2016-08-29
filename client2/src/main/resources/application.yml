@@ -1,0 +1,15 @@
+server:
+    port: 8085
+    contextPath: /client2
+
+security:
+    basic:
+        enabled: false
+
+config:
+    oauth2:
+        clientID: confidential2
+        clientSecret: secret2
+        accessTokenUri: http://localhost:8081/oauth/token
+        userAuthorizationUri: http://localhost:8081/oauth/authorize
+        resourceURI: http://localhost:8082/
